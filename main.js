@@ -7,12 +7,12 @@
 $('.flash-card').click( function() {
   $('.card' + this.id).css("display", "none")
   $('.back' + this.id).css("display", "block")
-})
+});
 
 $('.flash-card-back').click( function() {
   $('.back' + this.id).css("display", "none")
   $('.card' + this.id).css("display", "block")
-})
+});
 
 // ES6 attempt
 
@@ -24,3 +24,20 @@ $('.flash-card-back').click( function() {
 //     back.css("display", "block")
 //   }
 // })
+
+// animate on click ?
+
+// $('.flash-card').click( function() {
+//   $('.card' + this.id).css({
+//     'transform': 'rotateX(180deg)',
+//     'backface-visibility': 'hidden',
+//   })
+//   $('.back' + this.id).css({
+//     'transform': 'rotateX(180deg)',
+//   })
+// });
+//
+// $('.flash-card-back').click( function() {
+//   $('.back' + this.id).css("display", "none")
+//   $('.card' + this.id).css("display", "block")
+// });
